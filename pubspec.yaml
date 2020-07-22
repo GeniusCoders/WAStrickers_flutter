@@ -1,0 +1,68 @@
+name: WAStickers
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.3
+  flutter_whatsapp_stickers: 1.0.0+4
+  url_launcher: 5.5.0
+  esys_flutter_share: 1.0.2
+  flutter_screenutil: 2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+    - sticker_packs/1/
+    - sticker_packs/2/
+    - sticker_packs/3/
+    - sticker_packs/4/
+    - sticker_packs/5/
+    - sticker_packs/6/
+    - sticker_packs/7/
+    - sticker_packs/8/
+    - sticker_packs/9/
+    - sticker_packs/10/
+    - sticker_packs/11/
+    - sticker_packs/12/
+    - sticker_packs/13/
+    - sticker_packs/14/
+    - sticker_packs/15/
+    - sticker_packs/16/
+    - sticker_packs/17/
+    - sticker_packs/18/
+    - sticker_packs/19/
+    - sticker_packs/20/
+    - sticker_packs/21/
+    - sticker_packs/22/
+    - sticker_packs/23/
+    - sticker_packs/24/
+    - sticker_packs/sticker_packs.json
+
+ 
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
