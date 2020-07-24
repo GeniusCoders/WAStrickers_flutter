@@ -1,21 +1,27 @@
+import 'package:WAStickers/pages/home_page/home_page.dart';
 import 'package:WAStickers/sticker_list.dart';
 import 'package:WAStickers/widgets/Drawer.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: Colors.white,
+      statusBarBrightness: Brightness.dark,
+      statusBarIconBrightness: Brightness.dark));
+  runApp(MainApp());
+}
 
-class MyApp extends StatelessWidget {
-  final String title = 'Trendy WhatsApp Stickers';
+class MainApp extends StatelessWidget {
+  final String title = 'Stickers';
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: title,
-      theme: ThemeData(
-        primaryColor: Colors.teal[900],
-      ),
+      theme: ThemeData(primaryColor: Colors.teal[900], fontFamily: 'Avenir'),
       debugShowCheckedModeBanner: false,
-      home: MyHomePage(),
+      home: HomePage(),
     );
   }
 }
