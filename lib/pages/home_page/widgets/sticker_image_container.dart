@@ -66,17 +66,6 @@ class _StickerImageContainerState extends State<StickerImageContainer> {
   }
 }
 
-Future<Color> _getColor(ImageProvider image) async {
-  final paletteGenerator = await PaletteGenerator.fromImageProvider(
-    image,
-    size: Size(96, 96),
-    region: Offset.zero & Size(96, 96),
-    maximumColorCount: 4,
-  );
-
-  return paletteGenerator.lightVibrantColor.color ?? Colors.black;
-}
-
 //  Color(0xff30e848)
 // Color(0xff380541)
 // Color(0xff90e0f8)

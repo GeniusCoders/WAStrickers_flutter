@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:WAStickers/pages/sticker_view_page/sticker_view_page.dart';
 import 'package:WAStickers/sticker_pack_info.dart';
 import 'package:WAStickers/utils.dart';
 import 'package:flutter/material.dart';
@@ -144,8 +145,9 @@ class _StaticContentState extends State<StaticContent> {
       child: ListTile(
         onTap: () {
           Navigator.of(context).push(MaterialPageRoute(
-            builder: (BuildContext context) =>
-                StickerPackInformation(stickerList),
+            builder: (BuildContext context) => StickerViewPage(
+              stickerPack: stickerList,
+            ),
           ));
         },
         title: Text("$name"),

@@ -1,14 +1,11 @@
 import 'package:WAStickers/pages/home_page/home_page.dart';
+import 'package:WAStickers/pages/sticker_view_page/sticker_view_page.dart';
 import 'package:WAStickers/sticker_list.dart';
 import 'package:WAStickers/widgets/Drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 void main() {
-  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-      statusBarColor: Colors.white,
-      statusBarBrightness: Brightness.dark,
-      statusBarIconBrightness: Brightness.dark));
   runApp(MainApp());
 }
 
@@ -21,7 +18,7 @@ class MainApp extends StatelessWidget {
       title: title,
       theme: ThemeData(primaryColor: Colors.teal[900], fontFamily: 'Avenir'),
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: MyHomePage(),
     );
   }
 }
