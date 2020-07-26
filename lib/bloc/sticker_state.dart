@@ -18,3 +18,11 @@ class FeaturedStickerPack extends StickerState {
 
   FeaturedStickerPack(this.stickerPackModel);
 }
+
+class StickerAdded extends StickerState {}
+
+class StickerAddedFailed extends StickerState {
+  final String error;
+
+  StickerAddedFailed({@required this.error});
+}

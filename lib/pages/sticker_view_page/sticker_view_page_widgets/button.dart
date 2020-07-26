@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
   final Function onPress;
-
-  const Button({@required this.onPress});
+  final bool isInstall;
+  const Button({@required this.onPress, @required this.isInstall});
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +15,10 @@ class Button extends StatelessWidget {
         width: double.infinity,
         alignment: Alignment.center,
         decoration: BoxDecoration(
-            color: green, borderRadius: BorderRadius.circular(16)),
+            color: isInstall ? Color(0xFFcccccc) : green,
+            borderRadius: BorderRadius.circular(16)),
         child: Text(
-          'Add To WhatsApp',
+          isInstall ? 'Added' : 'Add To WhatsApp',
           style: TextStyle(color: white, fontWeight: FontWeight.w600),
         ),
       ),

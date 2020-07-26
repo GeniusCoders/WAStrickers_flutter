@@ -1,5 +1,8 @@
+import 'package:WAStickers/bloc/sticker_bloc.dart';
 import 'package:WAStickers/models/sticker_packs_model.dart';
+import 'package:WAStickers/style/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:palette_generator/palette_generator.dart';
 import 'sticker_view_page_widgets/sticker_info_top.dart';
 import 'sticker_view_page_widgets/sticker_packs.dart';
@@ -33,36 +36,55 @@ class _StickerViewPageState extends State<StickerViewPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: colorCode,
-        elevation: 0,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
-      ),
-      body: SingleChildScrollView(
-        child: Container(
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              StickerInfoTop(
-                stickerPack: widget.stickerPack,
-                color: colorCode,
-              ),
-              Expanded(
-                  child: StickerPacks(
-                stickerPack: widget.stickerPack,
-                color: colorCode,
-              ))
-            ],
+        appBar: AppBar(
+          backgroundColor: colorCode,
+          elevation: 0,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            },
           ),
         ),
-      ),
+        body: BlocProvider<StickerBloc>(
+            create: (_) => StickerBloc(), child: getStickerView()));
+  }
+
+  Widget getStickerView() {
+    return BlocConsumer<StickerBloc, StickerState>(
+      listener: (context, state) {},
+      builder: (context, state) {
+        return Stack(
+          children: <Widget>[
+            SingleChildScrollView(
+              child: Container(
+                height: MediaQuery.of(context).size.height,
+                width: MediaQuery.of(context).size.width,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    BlocProvider.value(
+                      value: BlocProvider.of<StickerBloc>(context),
+                      child: StickerInfoTop(
+                        stickerPack: widget.stickerPack,
+                        color: colorCode,
+                      ),
+                    ),
+                    Expanded(
+                        child: StickerPacks(
+                      stickerPack: widget.stickerPack,
+                      color: colorCode,
+                    ))
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              child: state is LoadingState ? Loading() : Container(),
+            )
+          ],
+        );
+      },
     );
   }
 }
@@ -76,4 +98,18 @@ Future<Color> _getColorCode(ImageProvider image) async {
   );
 
   return paletteGenerator.dominantColor.color ?? Colors.black;
+}
+
+class Loading extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      constraints:
+          BoxConstraints.expand(height: MediaQuery.of(context).size.height),
+      color: black.withOpacity(.3),
+      child: Center(
+        child: CircularProgressIndicator(),
+      ),
+    );
+  }
 }
