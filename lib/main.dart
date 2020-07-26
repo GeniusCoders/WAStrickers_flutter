@@ -23,29 +23,29 @@ class MainApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
+// class MyHomePage extends StatefulWidget {
+//   @override
+//   _MyHomePageState createState() => _MyHomePageState();
+// }
 
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    List<Widget> fakeBottomButtons = new List<Widget>();
-    fakeBottomButtons.add(
-      Container(
-        height: 50.0,
-      ),
-    );
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Trendy WhatsApp Stickers"),
-      ),
-      body: StaticContent(),
-      drawer: Drawer(
-        child: MyDrawer(),
-      ),
-      persistentFooterButtons: fakeBottomButtons,
-    );
-  }
-}
+// class _MyHomePageState extends State<MyHomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     List<Widget> fakeBottomButtons = new List<Widget>();
+//     fakeBottomButtons.add(
+//       Container(
+//         height: 50.0,
+//       ),
+//     );
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text("Trendy WhatsApp Stickers"),
+//       ),
+//       body: StaticContent(),
+//       drawer: Drawer(
+//         child: MyDrawer(),
+//       ),
+//       persistentFooterButtons: fakeBottomButtons,
+//     );
+//   }
+// }

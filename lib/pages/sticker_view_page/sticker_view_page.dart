@@ -1,11 +1,11 @@
+import 'package:WAStickers/models/sticker_packs_model.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:palette_generator/palette_generator.dart';
 import 'sticker_view_page_widgets/sticker_info_top.dart';
 import 'sticker_view_page_widgets/sticker_packs.dart';
 
 class StickerViewPage extends StatefulWidget {
-  final List stickerPack;
+  final StickerPacksList stickerPack;
 
   const StickerViewPage({@required this.stickerPack});
 
@@ -23,8 +23,8 @@ class _StickerViewPageState extends State<StickerViewPage> {
   }
 
   _getColor() async {
-    Color color = await _getColorCode(
-        AssetImage('sticker_packs/${widget.stickerPack[0]}/tray_img.png'));
+    Color color = await _getColorCode(AssetImage(
+        'sticker_packs/${widget.stickerPack.identifier}/tray_img.png'));
     setState(() {
       colorCode = color;
     });
@@ -51,7 +51,7 @@ class _StickerViewPageState extends State<StickerViewPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               StickerInfoTop(
-                stickPack: widget.stickerPack,
+                stickerPack: widget.stickerPack,
                 color: colorCode,
               ),
               Expanded(

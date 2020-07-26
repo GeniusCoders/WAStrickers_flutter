@@ -1,0 +1,1039 @@
+{
+    "android_play_store_link": "https://play.google.com/store/apps/details?id=com.rnwhatsappstickersapp",
+    "ios_app_store_link": "",
+    "sticker_packs": [{
+
+            "identifier": "1",
+            "name": "Jeffrey",
+            "publisher": "Facebook",
+            "tray_image_file": "tray_img.png",
+            "publisher_email": "",
+            "publisher_website": "",
+            "privacy_policy_website": "",
+            "license_agreement_website": "",
+            "stickers": [{
+                    "image_file": "jeffrey_01.webp",
+                    "emojis": ["☕", "🙂"]
+                },
+                {
+                    "image_file": "jeffrey_02.webp",
+                    "emojis": ["😄", "😀"]
+                },
+                {
+                    "image_file": "jeffrey_03.webp",
+                    "emojis": ["😆", "😂"]
+                },
+                {
+                    "image_file": "jeffrey_04.webp",
+                    "emojis": ["😩", "😰"]
+                },
+                {
+                    "image_file": "jeffrey_05.webp",
+                    "emojis": ["😭", "💧"]
+                },
+                {
+                    "image_file": "jeffrey_06.webp",
+                    "emojis": ["😍", "♥"]
+                },
+                {
+                    "image_file": "jeffrey_07.webp",
+                    "emojis": ["💔", "👎"]
+                },
+                {
+                    "image_file": "jeffrey_08.webp",
+                    "emojis": ["😍", "💑"]
+                },
+                {
+                    "image_file": "jeffrey_09.webp",
+                    "emojis": ["😘", "🍪"]
+                },
+                {
+                    "image_file": "jeffrey_10.webp",
+                    "emojis": ["🤔", "😐"]
+                },
+                {
+                    "image_file": "jeffrey_11.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "jeffrey_12.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "jeffrey_13.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "jeffrey_14.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "jeffrey_15.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "jeffrey_16.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "jeffrey_17.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "jeffrey_18.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "jeffrey_19.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "jeffrey_20.webp",
+                    "emojis": ["👎", "💑"]
+                }
+            ]
+        },
+        {
+            "identifier": "2",
+            "name": "Skeleton Crew",
+            "publisher": "Tomas Brunsdon",
+            "tray_image_file": "tray_img.png",
+            "publisher_email": "",
+            "publisher_website": "",
+            "privacy_policy_website": "",
+            "license_agreement_website": "",
+            "stickers": [{
+                    "image_file": "skeleton_crew_01.webp",
+                    "emojis": ["☕", "🙂"]
+                },
+                {
+                    "image_file": "skeleton_crew_02.webp",
+                    "emojis": ["😄", "😀"]
+                },
+                {
+                    "image_file": "skeleton_crew_03.webp",
+                    "emojis": ["😆", "😂"]
+                },
+                {
+                    "image_file": "skeleton_crew_04.webp",
+                    "emojis": ["😩", "😰"]
+                },
+                {
+                    "image_file": "skeleton_crew_05.webp",
+                    "emojis": ["😭", "💧"]
+                },
+                {
+                    "image_file": "skeleton_crew_06.webp",
+                    "emojis": ["😍", "♥"]
+                },
+                {
+                    "image_file": "skeleton_crew_07.webp",
+                    "emojis": ["💔", "👎"]
+                },
+                {
+                    "image_file": "skeleton_crew_08.webp",
+                    "emojis": ["😍", "💑"]
+                },
+                {
+                    "image_file": "skeleton_crew_09.webp",
+                    "emojis": ["😘", "🍪"]
+                },
+                {
+                    "image_file": "skeleton_crew_10.webp",
+                    "emojis": ["🤔", "😐"]
+                },
+                {
+                    "image_file": "skeleton_crew_11.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "skeleton_crew_12.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "skeleton_crew_13.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "skeleton_crew_14.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "skeleton_crew_15.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "skeleton_crew_16.webp",
+                    "emojis": ["👎", "💑"]
+                }
+            ]
+        },
+        {
+            "identifier": "3",
+            "name": "BT21 Love & Peace",
+            "publisher": "BTS",
+            "tray_image_file": "tray_img.png",
+            "publisher_email": "",
+            "publisher_website": "",
+            "privacy_policy_website": "",
+            "license_agreement_website": "",
+            "stickers": [{
+                    "image_file": "BT_01.webp",
+                    "emojis": ["☕", "🙂"]
+                },
+                {
+                    "image_file": "BT_02.webp",
+                    "emojis": ["😄", "😀"]
+                },
+                {
+                    "image_file": "BT_03.webp",
+                    "emojis": ["😆", "😂"]
+                },
+                {
+                    "image_file": "BT_04.webp",
+                    "emojis": ["😩", "😰"]
+                },
+                {
+                    "image_file": "BT_05.webp",
+                    "emojis": ["😭", "💧"]
+                },
+                {
+                    "image_file": "BT_06.webp",
+                    "emojis": ["😍", "♥"]
+                },
+                {
+                    "image_file": "BT_07.webp",
+                    "emojis": ["💔", "👎"]
+                },
+                {
+                    "image_file": "BT_08.webp",
+                    "emojis": ["😍", "💑"]
+                },
+                {
+                    "image_file": "BT_09.webp",
+                    "emojis": ["😘", "🍪"]
+                },
+                {
+                    "image_file": "BT_10.webp",
+                    "emojis": ["🤔", "😐"]
+                },
+                {
+                    "image_file": "BT_11.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "BT_12.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "BT_13.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "BT_14.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "BT_15.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "BT_16.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "BT_17.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "BT_18.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "BT_19.webp",
+                    "emojis": ["👎", "💑"]
+                }
+            ]
+        },
+        {
+            "identifier": "4",
+            "name": "Moodies",
+            "publisher": "Messenger",
+            "tray_image_file": "tray_img.png",
+            "publisher_email": "",
+            "publisher_website": "",
+            "privacy_policy_website": "",
+            "license_agreement_website": "",
+            "stickers": [{
+                    "image_file": "modie_01.webp",
+                    "emojis": ["☕", "🙂"]
+                },
+                {
+                    "image_file": "modie_02.webp",
+                    "emojis": ["😄", "😀"]
+                },
+                {
+                    "image_file": "modie_03.webp",
+                    "emojis": ["😆", "😂"]
+                },
+                {
+                    "image_file": "modie_04.webp",
+                    "emojis": ["😩", "😰"]
+                },
+                {
+                    "image_file": "modie_05.webp",
+                    "emojis": ["😭", "💧"]
+                },
+                {
+                    "image_file": "modie_06.webp",
+                    "emojis": ["😍", "♥"]
+                },
+                {
+                    "image_file": "modie_07.webp",
+                    "emojis": ["💔", "👎"]
+                },
+                {
+                    "image_file": "modie_08.webp",
+                    "emojis": ["😍", "💑"]
+                },
+                {
+                    "image_file": "modie_09.webp",
+                    "emojis": ["😘", "🍪"]
+                },
+                {
+                    "image_file": "modie_10.webp",
+                    "emojis": ["🤔", "😐"]
+                },
+                {
+                    "image_file": "modie_11.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "modie_12.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "modie_13.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "modie_14.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "modie_15.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "modie_16.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "modie_17.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "modie_18.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "modie_19.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "modie_20.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "modie_21.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "modie_22.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "modie_23.webp",
+                    "emojis": ["👎", "💑"]
+                }
+
+            ]
+        },
+        {
+            "identifier": "5",
+            "name": "Avengers: Infinity War",
+            "publisher": "Marvel Studios",
+            "tray_image_file": "tray_img.png",
+            "publisher_email": "",
+            "publisher_website": "",
+            "privacy_policy_website": "",
+            "license_agreement_website": "",
+            "stickers": [{
+                    "image_file": "avengersinfinity_war_01.webp",
+                    "emojis": ["☕", "🙂"]
+                },
+                {
+                    "image_file": "avengersinfinity_war_02.webp",
+                    "emojis": ["😄", "😀"]
+                },
+                {
+                    "image_file": "avengersinfinity_war_03.webp",
+                    "emojis": ["😆", "😂"]
+                },
+                {
+                    "image_file": "avengersinfinity_war_04.webp",
+                    "emojis": ["😩", "😰"]
+                },
+                {
+                    "image_file": "avengersinfinity_war_05.webp",
+                    "emojis": ["😭", "💧"]
+                },
+                {
+                    "image_file": "avengersinfinity_war_06.webp",
+                    "emojis": ["😍", "♥"]
+                },
+                {
+                    "image_file": "avengersinfinity_war_07.webp",
+                    "emojis": ["💔", "👎"]
+                },
+                {
+                    "image_file": "avengersinfinity_war_08.webp",
+                    "emojis": ["😍", "💑"]
+                },
+                {
+                    "image_file": "avengersinfinity_war_09.webp",
+                    "emojis": ["😘", "🍪"]
+                },
+                {
+                    "image_file": "avengersinfinity_war_10.webp",
+                    "emojis": ["🤔", "😐"]
+                },
+                {
+                    "image_file": "avengersinfinity_war_11.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "avengersinfinity_war_12.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "avengersinfinity_war_13.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "avengersinfinity_war_14.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "avengersinfinity_war_15.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "avengersinfinity_war_16.webp",
+                    "emojis": ["👎", "💑"]
+                }
+            ]
+        },
+        {
+            "identifier": "6",
+            "name": "Biscuit in Love",
+            "publisher": "Ghostbot",
+            "tray_image_file": "tray_img.png",
+            "publisher_email": "",
+            "publisher_website": "",
+            "privacy_policy_website": "",
+            "license_agreement_website": "",
+            "stickers": [{
+                    "image_file": "Bis_01.webp",
+                    "emojis": ["☕", "🙂"]
+                },
+                {
+                    "image_file": "Bis_02.webp",
+                    "emojis": ["😄", "😀"]
+                },
+                {
+                    "image_file": "Bis_03.webp",
+                    "emojis": ["😆", "😂"]
+                },
+                {
+                    "image_file": "Bis_04.webp",
+                    "emojis": ["😩", "😰"]
+                },
+                {
+                    "image_file": "Bis_05.webp",
+                    "emojis": ["😭", "💧"]
+                },
+                {
+                    "image_file": "Bis_06.webp",
+                    "emojis": ["😍", "♥"]
+                },
+                {
+                    "image_file": "Bis_07.webp",
+                    "emojis": ["💔", "👎"]
+                },
+                {
+                    "image_file": "Bis_08.webp",
+                    "emojis": ["😍", "💑"]
+                },
+                {
+                    "image_file": "Bis_09.webp",
+                    "emojis": ["😘", "🍪"]
+                },
+                {
+                    "image_file": "Bis_10.webp",
+                    "emojis": ["🤔", "😐"]
+                },
+                {
+                    "image_file": "Bis_11.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "Bis_12.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "Bis_13.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "Bis_14.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "Bis_15.webp",
+                    "emojis": ["👎", "💑"]
+                }
+            ]
+        },
+        {
+            "identifier": "7",
+            "name": "As Per Usual",
+            "publisher": "Dami Lee",
+            "tray_image_file": "tray_img.png",
+            "publisher_email": "",
+            "publisher_website": "",
+            "privacy_policy_website": "",
+            "license_agreement_website": "",
+            "stickers": [{
+                    "image_file": "as_per_usual_01.webp",
+                    "emojis": ["☕", "🙂"]
+                },
+                {
+                    "image_file": "as_per_usual_02.webp",
+                    "emojis": ["😄", "😀"]
+                },
+                {
+                    "image_file": "as_per_usual_03.webp",
+                    "emojis": ["😆", "😂"]
+                },
+                {
+                    "image_file": "as_per_usual_04.webp",
+                    "emojis": ["😩", "😰"]
+                },
+                {
+                    "image_file": "as_per_usual_05.webp",
+                    "emojis": ["😭", "💧"]
+                },
+                {
+                    "image_file": "as_per_usual_06.webp",
+                    "emojis": ["😍", "♥"]
+                },
+                {
+                    "image_file": "as_per_usual_07.webp",
+                    "emojis": ["💔", "👎"]
+                },
+                {
+                    "image_file": "as_per_usual_08.webp",
+                    "emojis": ["😍", "💑"]
+                },
+                {
+                    "image_file": "as_per_usual_09.webp",
+                    "emojis": ["😘", "🍪"]
+                },
+                {
+                    "image_file": "as_per_usual_10.webp",
+                    "emojis": ["🤔", "😐"]
+                },
+                {
+                    "image_file": "as_per_usual_11.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "as_per_usual_12.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "as_per_usual_13.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "as_per_usual_14.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "as_per_usual_15.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "as_per_usual_16.webp",
+                    "emojis": ["☕", "🙂"]
+                },
+                {
+                    "image_file": "as_per_usual_17.webp",
+                    "emojis": ["😄", "😀"]
+                },
+                {
+                    "image_file": "as_per_usual_18.webp",
+                    "emojis": ["😆", "😂"]
+                },
+                {
+                    "image_file": "as_per_usual_19.webp",
+                    "emojis": ["😩", "😰"]
+                },
+                {
+                    "image_file": "as_per_usual_20.webp",
+                    "emojis": ["😭", "💧"]
+                },
+                {
+                    "image_file": "as_per_usual_21.webp",
+                    "emojis": ["😍", "♥"]
+                },
+                {
+                    "image_file": "as_per_usual_22.webp",
+                    "emojis": ["💔", "👎"]
+                },
+                {
+                    "image_file": "as_per_usual_23.webp",
+                    "emojis": ["😍", "💑"]
+                },
+                {
+                    "image_file": "as_per_usual_24.webp",
+                    "emojis": ["😘", "🍪"]
+                }
+            ]
+        },
+        {
+            "identifier": "8",
+            "name": "Brown and Friends",
+            "publisher": "Hozo",
+            "tray_image_file": "tray_img.png",
+            "publisher_email": "",
+            "publisher_website": "",
+            "privacy_policy_website": "",
+            "license_agreement_website": "",
+            "stickers": [{
+                    "image_file": "brown_and_friends_01.webp",
+                    "emojis": ["☕", "🙂"]
+                },
+                {
+                    "image_file": "brown_and_friends_02.webp",
+                    "emojis": ["😄", "😀"]
+                },
+                {
+                    "image_file": "brown_and_friends_03.webp",
+                    "emojis": ["😆", "😂"]
+                },
+                {
+                    "image_file": "brown_and_friends_04.webp",
+                    "emojis": ["😩", "😰"]
+                },
+                {
+                    "image_file": "brown_and_friends_05.webp",
+                    "emojis": ["😭", "💧"]
+                },
+                {
+                    "image_file": "brown_and_friends_06.webp",
+                    "emojis": ["😍", "♥"]
+                },
+                {
+                    "image_file": "brown_and_friends_07.webp",
+                    "emojis": ["💔", "👎"]
+                },
+                {
+                    "image_file": "brown_and_friends_08.webp",
+                    "emojis": ["😍", "💑"]
+                },
+                {
+                    "image_file": "brown_and_friends_09.webp",
+                    "emojis": ["😘", "🍪"]
+                },
+                {
+                    "image_file": "brown_and_friends_10.webp",
+                    "emojis": ["🤔", "😐"]
+                },
+                {
+                    "image_file": "brown_and_friends_11.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "brown_and_friends_12.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "brown_and_friends_13.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "brown_and_friends_14.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "brown_and_friends_15.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "brown_and_friends_16.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "brown_and_friends_17.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "brown_and_friends_18.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "brown_and_friends_19.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "brown_and_friends_20.webp",
+                    "emojis": ["👎", "💑"]
+                }
+            ]
+        },
+        {
+            "identifier": "9",
+            "name": "BT21 Absolute Charm",
+            "publisher": "BTS",
+            "tray_image_file": "tray_img.png",
+            "publisher_email": "",
+            "publisher_website": "",
+            "privacy_policy_website": "",
+            "license_agreement_website": "",
+            "stickers": [{
+                    "image_file": "bt21_absolute_charm_01.webp",
+                    "emojis": ["☕", "🙂"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_02.webp",
+                    "emojis": ["😄", "😀"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_03.webp",
+                    "emojis": ["😆", "😂"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_04.webp",
+                    "emojis": ["😩", "😰"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_05.webp",
+                    "emojis": ["😭", "💧"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_06.webp",
+                    "emojis": ["😍", "♥"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_07.webp",
+                    "emojis": ["💔", "👎"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_08.webp",
+                    "emojis": ["😍", "💑"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_09.webp",
+                    "emojis": ["😘", "🍪"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_10.webp",
+                    "emojis": ["🤔", "😐"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_11.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_12.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_13.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_14.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_15.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_16.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_17.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_18.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_19.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "bt21_absolute_charm_20.webp",
+                    "emojis": ["👎", "💑"]
+                }
+            ]
+        },
+        {
+            "identifier": "10",
+            "name": "Love of Soccer",
+            "publisher": "Leao Espinosa",
+            "tray_image_file": "tray_img.png",
+            "publisher_email": "",
+            "publisher_website": "",
+            "privacy_policy_website": "",
+            "license_agreement_website": "",
+            "stickers": [{
+                    "image_file": "love_of_football_01.webp",
+                    "emojis": ["☕", "🙂"]
+                },
+                {
+                    "image_file": "love_of_football_02.webp",
+                    "emojis": ["😄", "😀"]
+                },
+                {
+                    "image_file": "love_of_football_03.webp",
+                    "emojis": ["😆", "😂"]
+                },
+                {
+                    "image_file": "love_of_football_04.webp",
+                    "emojis": ["😩", "😰"]
+                },
+                {
+                    "image_file": "love_of_football_05.webp",
+                    "emojis": ["😭", "💧"]
+                },
+                {
+                    "image_file": "love_of_football_06.webp",
+                    "emojis": ["😍", "♥"]
+                },
+                {
+                    "image_file": "love_of_football_07.webp",
+                    "emojis": ["💔", "👎"]
+                },
+                {
+                    "image_file": "love_of_football_08.webp",
+                    "emojis": ["😍", "💑"]
+                },
+                {
+                    "image_file": "love_of_football_09.webp",
+                    "emojis": ["😘", "🍪"]
+                },
+                {
+                    "image_file": "love_of_football_10.webp",
+                    "emojis": ["🤔", "😐"]
+                },
+                {
+                    "image_file": "love_of_football_11.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "love_of_football_12.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "love_of_football_13.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "love_of_football_14.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "love_of_football_15.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "love_of_football_16.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "love_of_football_17.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "love_of_football_18.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "love_of_football_19.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "love_of_football_20.webp",
+                    "emojis": ["👎", "💑"]
+                }
+            ]
+        },
+        {
+            "identifier": "11",
+            "name": "Noo-Hin Dance",
+            "publisher": "Vithita Animation",
+            "tray_image_file": "tray_img.png",
+            "publisher_email": "",
+            "publisher_website": "",
+            "privacy_policy_website": "",
+            "license_agreement_website": "",
+            "stickers": [{
+                    "image_file": "noo_hin_dance_01.webp",
+                    "emojis": ["☕", "🙂"]
+                },
+                {
+                    "image_file": "noo_hin_dance_02.webp",
+                    "emojis": ["😄", "😀"]
+                },
+                {
+                    "image_file": "noo_hin_dance_03.webp",
+                    "emojis": ["😆", "😂"]
+                },
+                {
+                    "image_file": "noo_hin_dance_04.webp",
+                    "emojis": ["😩", "😰"]
+                },
+                {
+                    "image_file": "noo_hin_dance_05.webp",
+                    "emojis": ["😭", "💧"]
+                },
+                {
+                    "image_file": "noo_hin_dance_06.webp",
+                    "emojis": ["😍", "♥"]
+                },
+                {
+                    "image_file": "noo_hin_dance_07.webp",
+                    "emojis": ["💔", "👎"]
+                },
+                {
+                    "image_file": "noo_hin_dance_08.webp",
+                    "emojis": ["😍", "💑"]
+                },
+                {
+                    "image_file": "noo_hin_dance_09.webp",
+                    "emojis": ["😘", "🍪"]
+                },
+                {
+                    "image_file": "noo_hin_dance_10.webp",
+                    "emojis": ["🤔", "😐"]
+                },
+                {
+                    "image_file": "noo_hin_dance_11.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "noo_hin_dance_12.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "noo_hin_dance_13.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "noo_hin_dance_14.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "noo_hin_dance_15.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "noo_hin_dance_16.webp",
+                    "emojis": ["👎", "💑"]
+                }
+            ]
+        },
+        {
+            "identifier": "12",
+            "name": "Super Tiny",
+            "publisher": "Jayde Fish",
+            "tray_image_file": "tray_img.png",
+            "publisher_email": "",
+            "publisher_website": "",
+            "privacy_policy_website": "",
+            "license_agreement_website": "",
+            "stickers": [{
+                    "image_file": "super_tiny_01.webp",
+                    "emojis": ["☕", "🙂"]
+                },
+                {
+                    "image_file": "super_tiny_02.webp",
+                    "emojis": ["😄", "😀"]
+                },
+                {
+                    "image_file": "super_tiny_03.webp",
+                    "emojis": ["😆", "😂"]
+                },
+                {
+                    "image_file": "super_tiny_04.webp",
+                    "emojis": ["😩", "😰"]
+                },
+                {
+                    "image_file": "super_tiny_05.webp",
+                    "emojis": ["😭", "💧"]
+                },
+                {
+                    "image_file": "super_tiny_06.webp",
+                    "emojis": ["😍", "♥"]
+                },
+                {
+                    "image_file": "super_tiny_07.webp",
+                    "emojis": ["💔", "👎"]
+                },
+                {
+                    "image_file": "super_tiny_08.webp",
+                    "emojis": ["😍", "💑"]
+                },
+                {
+                    "image_file": "super_tiny_09.webp",
+                    "emojis": ["😘", "🍪"]
+                },
+                {
+                    "image_file": "super_tiny_10.webp",
+                    "emojis": ["🤔", "😐"]
+                },
+                {
+                    "image_file": "super_tiny_11.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "super_tiny_12.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "super_tiny_13.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "super_tiny_14.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "super_tiny_15.webp",
+                    "emojis": ["👎", "💑"]
+                },
+                {
+                    "image_file": "super_tiny_16.webp",
+                    "emojis": ["👎", "💑"]
+                }
+            ]
+        }
+    ]
+}

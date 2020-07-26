@@ -1,7 +1,8 @@
+import 'package:WAStickers/models/sticker_packs_model.dart';
 import 'package:flutter/material.dart';
 
 class StickerPacks extends StatefulWidget {
-  final List stickerPack;
+  final StickerPacksList stickerPack;
   final Color color;
   const StickerPacks({this.stickerPack, this.color});
 
@@ -10,13 +11,12 @@ class StickerPacks extends StatefulWidget {
 }
 
 class _StickerPacksState extends State<StickerPacks> {
-  List stickerPack;
+  StickerPacksList stickerPack;
 
   _StickerPacksState(this.stickerPack);
 
   @override
   Widget build(BuildContext context) {
-    List totalStickers = stickerPack[4];
     return Container(
       padding: EdgeInsets.symmetric(
         horizontal: 10,
@@ -39,10 +39,10 @@ class _StickerPacksState extends State<StickerPacks> {
                   crossAxisCount: 3,
                   childAspectRatio: 1,
                 ),
-                itemCount: totalStickers.length,
+                itemCount: stickerPack.stickers.length,
                 itemBuilder: (context, index) {
                   var stickerImg =
-                      "sticker_packs/${stickerPack[0]}/${totalStickers[index]['image_file']}";
+                      "sticker_packs/${stickerPack.identifier}/${stickerPack.stickers[index].imageFile}";
                   return Container(
                     decoration: BoxDecoration(
                         color: widget.color.withOpacity(.4),

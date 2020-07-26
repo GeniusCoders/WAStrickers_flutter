@@ -144,11 +144,11 @@ class _StaticContentState extends State<StaticContent> {
       padding: EdgeInsets.all(10.0),
       child: ListTile(
         onTap: () {
-          Navigator.of(context).push(MaterialPageRoute(
-            builder: (BuildContext context) => StickerViewPage(
-              stickerPack: stickerList,
-            ),
-          ));
+          // Navigator.of(context).push(MaterialPageRoute(
+          //   builder: (BuildContext context) => StickerViewPage(
+          //     stickerPack: stickerList,
+          //   ),
+          // ));
         },
         title: Text("$name"),
         subtitle: Text("$publisher"),

@@ -12,6 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   font_awesome_flutter: ^8.8.1
+  flutter_bloc: ^5.0.0
 
   cupertino_icons: ^0.1.3
   flutter_whatsapp_stickers: 1.0.0+4
@@ -55,6 +56,8 @@ flutter:
     - sticker_packs/23/
     - sticker_packs/24/
     - sticker_packs/sticker_packs.json
+    - sticker_packs/all_packs.json
+    - sticker_packs/featured_pack.json
 
  
   fonts:

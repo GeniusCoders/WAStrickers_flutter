@@ -4,10 +4,13 @@ import 'package:flutter/material.dart';
 class StickerImageContainer extends StatefulWidget {
   final Color color;
   final String str;
-
+  final String name;
+  final String stickerCount;
   const StickerImageContainer({
     @required this.color,
     @required this.str,
+    @required this.name,
+    @required this.stickerCount,
   });
 
   @override
@@ -44,16 +47,20 @@ class _StickerImageContainerState extends State<StickerImageContainer> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Text(
-                  'Skelton',
-                  style: TextStyle(
-                      color: black, fontWeight: FontWeight.w600, fontSize: 16),
+                FittedBox(
+                  child: Text(
+                    widget.name,
+                    style: TextStyle(
+                        color: black,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 16),
+                  ),
                 ),
                 SizedBox(
                   height: 4,
                 ),
                 Text(
-                  '26 Stickers',
+                  '${widget.stickerCount} Stickers',
                   style: TextStyle(
                       fontSize: 12, fontWeight: FontWeight.w800, color: black),
                 )

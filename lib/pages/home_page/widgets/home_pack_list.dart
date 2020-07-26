@@ -1,31 +1,43 @@
-import 'package:WAStickers/style/colors.dart';
+import 'package:WAStickers/models/sticker_packs_model.dart';
 import 'package:flutter/material.dart';
-
 import 'sticker_image_container.dart';
+import 'package:WAStickers/pages/sticker_view_page/sticker_view_page.dart';
 
 class HomePackList extends StatelessWidget {
+  final List data;
+  final StickerPackModel stickerPackModel;
+  const HomePackList({@required this.data, @required this.stickerPackModel});
+
   @override
   Widget build(BuildContext context) {
+    print(stickerPackModel.stickerPacks[0].name);
     return Container(
       height: 200,
       child: Padding(
         padding: const EdgeInsets.only(left: 10),
-        child: ListView(
+        child: ListView.builder(
           scrollDirection: Axis.horizontal,
-          children: <Widget>[
-            StickerImageContainer(
-              color: Color(0xff30e848),
-              str: 'sticker_packs/1/tray_img.png',
-            ),
-            StickerImageContainer(
-              color: Color(0xff380541),
-              str: 'sticker_packs/2/tray_img.png',
-            ),
-            StickerImageContainer(
-              color: Color(0xff90e0f8),
-              str: 'sticker_packs/3/tray_img.png',
-            ),
-          ],
+          itemCount: data.length,
+          itemBuilder: (context, index) {
+            return InkWell(
+              onTap: () {
+                final _data = stickerPackModel
+                    .stickerPacks[int.parse(data[index]['Index']) - 1];
+                Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) => StickerViewPage(
+                    stickerPack: _data,
+                  ),
+                ));
+              },
+              child: StickerImageContainer(
+                color: Color(data[index]['Color']),
+                str:
+                    'sticker_packs/${stickerPackModel.stickerPacks[int.parse(data[index]['Index']) - 1].identifier}/tray_img.png',
+                name: data[index]['Name'],
+                stickerCount: data[index]['Sticker_Count'],
+              ),
+            );
+          },
         ),
       ),
     );

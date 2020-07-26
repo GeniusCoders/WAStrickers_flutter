@@ -1,3 +1,4 @@
+import 'package:WAStickers/models/sticker_packs_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_whatsapp_stickers/flutter_whatsapp_stickers.dart';
 
@@ -6,39 +7,39 @@ import 'sticker_info.dart';
 import 'sticker_try_img.dart';
 
 class StickerInfoTop extends StatefulWidget {
-  final List stickPack;
+  final StickerPacksList stickerPack;
   final Color color;
-  const StickerInfoTop({this.stickPack, this.color});
+  const StickerInfoTop({this.stickerPack, this.color});
 
   @override
-  _StickerInfoTopState createState() => _StickerInfoTopState(stickPack);
+  _StickerInfoTopState createState() => _StickerInfoTopState(stickerPack);
 }
 
 class _StickerInfoTopState extends State<StickerInfoTop> {
-  List stickerPack;
+  StickerPacksList stickerPack;
   final WhatsAppStickers _waStickers = WhatsAppStickers();
 
   _StickerInfoTopState(this.stickerPack);
 
   void _checkInstallationStatuses() async {
-    var tempName = stickerPack[0];
-    bool tempInstall =
-        await WhatsAppStickers().isStickerPackInstalled(tempName);
+    // var tempName = stickerPack[0];
+    // bool tempInstall =
+    //     await WhatsAppStickers().isStickerPackInstalled(tempName);
 
-    if (tempInstall == true) {
-      if (!stickerPack[6].contains(tempName)) {
-        setState(() {
-          stickerPack[6].add(tempName);
-        });
-      }
-    } else {
-      if (stickerPack[6].contains(tempName)) {
-        setState(() {
-          stickerPack[6].remove(tempName);
-        });
-      }
-    }
-    print("${stickerPack[6]}");
+    // if (tempInstall == true) {
+    //   if (!stickerPack[6].contains(tempName)) {
+    //     setState(() {
+    //       stickerPack[6].add(tempName);
+    //     });
+    //   }
+    // } else {
+    //   if (stickerPack[6].contains(tempName)) {
+    //     setState(() {
+    //       stickerPack[6].remove(tempName);
+    //     });
+    //   }
+    // }
+    // print("${stickerPack[6]}");
   }
 
   @override
@@ -77,7 +78,8 @@ class _StickerInfoTopState extends State<StickerInfoTop> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
                   StickerTryImage(
-                    imgUrl: 'sticker_packs/${stickerPack[0]}/${stickerPack[3]}',
+                    imgUrl:
+                        'sticker_packs/${stickerPack.identifier}/${stickerPack.trayImageFile}',
                   ),
                   Expanded(
                     child: Container(
@@ -88,8 +90,8 @@ class _StickerInfoTopState extends State<StickerInfoTop> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           StickerInfo(
-                            stickerName: '${stickerPack[1]}',
-                            stickerOwner: '${stickerPack[2]}',
+                            stickerName: '${stickerPack.name}',
+                            stickerOwner: '${stickerPack.publisher}',
                           ),
                           Button(
                             onPress: () {},
