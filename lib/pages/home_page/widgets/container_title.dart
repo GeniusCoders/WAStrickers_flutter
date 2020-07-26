@@ -8,13 +8,13 @@ class ContainerTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Text(
             str,
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
           ),
           isShowButton
               ? InkWell(

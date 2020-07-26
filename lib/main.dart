@@ -18,7 +18,7 @@ class MainApp extends StatelessWidget {
       title: title,
       theme: ThemeData(primaryColor: Colors.teal[900], fontFamily: 'Avenir'),
       debugShowCheckedModeBanner: false,
-      home: MyHomePage(),
+      home: HomePage(),
     );
   }
 }

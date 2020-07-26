@@ -3,27 +3,24 @@ import 'package:flutter/material.dart';
 
 import 'sticker_image_container.dart';
 
-class HomePackList extends StatelessWidget {
+class AllPackList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
+      color: black,
       child: Padding(
-        padding: const EdgeInsets.only(left: 10),
-        child: ListView(
-          scrollDirection: Axis.horizontal,
+        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+        child: GridView.count(
+          // physics: NeverScrollableScrollPhysics(),
+          crossAxisCount: 2,
           children: <Widget>[
-            StickerImageContainer(
-              color: Color(0xff30e848),
-              str: 'sticker_packs/1/tray_img.png',
-            ),
             StickerImageContainer(
               color: Color(0xff380541),
               str: 'sticker_packs/2/tray_img.png',
             ),
             StickerImageContainer(
-              color: Color(0xff90e0f8),
-              str: 'sticker_packs/3/tray_img.png',
+              color: Color(0xff380541),
+              str: 'sticker_packs/2/tray_img.png',
             ),
           ],
         ),

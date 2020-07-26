@@ -1,6 +1,5 @@
 import 'package:WAStickers/style/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:palette_generator/palette_generator.dart';
 
 class StickerImageContainer extends StatefulWidget {
   final Color color;
@@ -20,7 +19,9 @@ class _StickerImageContainerState extends State<StickerImageContainer> {
   Widget build(BuildContext context) {
     return Container(
       width: 140,
-      margin: EdgeInsets.symmetric(horizontal: 10),
+      margin: EdgeInsets.symmetric(
+        horizontal: 10,
+      ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
@@ -28,17 +29,16 @@ class _StickerImageContainerState extends State<StickerImageContainer> {
             width: double.infinity,
             height: 140,
             decoration: BoxDecoration(
-                color: widget.color, borderRadius: BorderRadius.circular(6)),
-            child: Padding(
-                padding: EdgeInsets.only(top: 10),
-                child: Image.asset(widget.str)),
+                color: widget.color,
+                borderRadius: BorderRadius.vertical(top: Radius.circular(6))),
+            child: Image.asset(widget.str),
           ),
           Container(
             width: double.infinity,
-            padding: EdgeInsets.symmetric(horizontal: 6, vertical: 10),
+            padding: EdgeInsets.symmetric(horizontal: 14, vertical: 10),
             decoration: BoxDecoration(
               color: white,
-              borderRadius: BorderRadius.vertical(bottom: Radius.circular(10)),
+              borderRadius: BorderRadius.vertical(bottom: Radius.circular(6)),
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -50,7 +50,7 @@ class _StickerImageContainerState extends State<StickerImageContainer> {
                       color: black, fontWeight: FontWeight.w600, fontSize: 16),
                 ),
                 SizedBox(
-                  height: 2,
+                  height: 4,
                 ),
                 Text(
                   '26 Stickers',
