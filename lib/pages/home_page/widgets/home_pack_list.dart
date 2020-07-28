@@ -10,7 +10,6 @@ class HomePackList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(stickerPackModel.stickerPacks[0].name);
     return Container(
       height: 200,
       child: Padding(

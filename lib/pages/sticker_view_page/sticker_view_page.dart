@@ -1,8 +1,11 @@
 import 'package:WAStickers/bloc/sticker_bloc.dart';
 import 'package:WAStickers/models/sticker_packs_model.dart';
 import 'package:WAStickers/style/colors.dart';
+import 'package:esys_flutter_share/esys_flutter_share.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:palette_generator/palette_generator.dart';
 import 'sticker_view_page_widgets/sticker_info_top.dart';
 import 'sticker_view_page_widgets/sticker_packs.dart';
@@ -33,6 +36,15 @@ class _StickerViewPageState extends State<StickerViewPage> {
     });
   }
 
+  _onShare() async {
+    final ByteData bytes = await rootBundle.load(
+        "sticker_packs/${widget.stickerPack.identifier}/${widget.stickerPack.trayImageFile}");
+    var pngBytes = bytes.buffer.asUint8List();
+    await Share.file(
+        'Refer Merchant', 'referMerchant.png', pngBytes, 'image/png',
+        text: 'Download this sticker ');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,6 +57,12 @@ class _StickerViewPageState extends State<StickerViewPage> {
               Navigator.pop(context);
             },
           ),
+          actions: <Widget>[
+            IconButton(
+              onPressed: _onShare,
+              icon: Icon(Icons.share),
+            )
+          ],
         ),
         body: BlocProvider<StickerBloc>(
             create: (_) => StickerBloc(), child: getStickerView()));
