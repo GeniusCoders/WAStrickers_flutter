@@ -16,7 +16,6 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   StickerPackModel featuredStickerList;
   StickerPackModel allStickerList;
-
   @override
   void initState() {
     super.initState();
@@ -26,6 +25,8 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    print("HELLO");
+
     return BlocConsumer<StickerBloc, StickerState>(
       listener: (context, state) {
         if (state is AllStickerPack) {
