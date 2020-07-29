@@ -74,27 +74,25 @@ class _StickerViewPageState extends State<StickerViewPage> {
       builder: (context, state) {
         return Stack(
           children: <Widget>[
-            SingleChildScrollView(
-              child: Container(
-                height: MediaQuery.of(context).size.height,
-                width: MediaQuery.of(context).size.width,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    BlocProvider.value(
-                      value: BlocProvider.of<StickerBloc>(context),
-                      child: StickerInfoTop(
-                        stickerPack: widget.stickerPack,
-                        color: colorCode,
-                      ),
-                    ),
-                    Expanded(
-                        child: StickerPacks(
+            Container(
+              height: MediaQuery.of(context).size.height,
+              width: MediaQuery.of(context).size.width,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  BlocProvider.value(
+                    value: BlocProvider.of<StickerBloc>(context),
+                    child: StickerInfoTop(
                       stickerPack: widget.stickerPack,
                       color: colorCode,
-                    ))
-                  ],
-                ),
+                    ),
+                  ),
+                  Expanded(
+                      child: StickerPacks(
+                    stickerPack: widget.stickerPack,
+                    color: colorCode,
+                  ))
+                ],
               ),
             ),
             Container(

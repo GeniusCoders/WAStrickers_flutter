@@ -34,7 +34,6 @@ class _StickerPacksState extends State<StickerPacks> {
           ),
           Expanded(
             child: GridView.builder(
-                physics: NeverScrollableScrollPhysics(),
                 gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3,
                   childAspectRatio: 1,
