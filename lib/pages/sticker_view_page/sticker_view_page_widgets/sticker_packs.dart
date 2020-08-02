@@ -1,5 +1,7 @@
 import 'package:WAStickers/models/sticker_packs_model.dart';
+import 'package:WAStickers/pages/ads_widget/fake_bottom.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class StickerPacks extends StatefulWidget {
   final StickerPacksList stickerPack;
@@ -19,14 +21,14 @@ class _StickerPacksState extends State<StickerPacks> {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(
-        horizontal: 10,
+        horizontal: 10.w,
       ),
       margin: EdgeInsets.only(top: 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.only(left: 10.0),
+            padding: EdgeInsets.only(left: 10.0.w),
             child: Text(
               'Pack Stickers',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
@@ -45,19 +47,20 @@ class _StickerPacksState extends State<StickerPacks> {
                   return Container(
                     decoration: BoxDecoration(
                         color: widget.color.withOpacity(.4),
-                        borderRadius: BorderRadius.circular(10)),
-                    margin: EdgeInsets.all(10),
+                        borderRadius: BorderRadius.circular(10.w)),
+                    margin: EdgeInsets.all(10.w),
                     child: Padding(
-                      padding: const EdgeInsets.all(4.0),
+                      padding: EdgeInsets.all(4.0.w),
                       child: Image.asset(
                         stickerImg,
-                        width: 100,
-                        height: 100,
+                        width: 100.w,
+                        height: 100.h,
                       ),
                     ),
                   );
                 }),
           ),
+          FakeBottom()
         ],
       ),
     );

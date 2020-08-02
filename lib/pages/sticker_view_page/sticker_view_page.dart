@@ -5,7 +5,6 @@ import 'package:esys_flutter_share/esys_flutter_share.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:palette_generator/palette_generator.dart';
 import 'sticker_view_page_widgets/sticker_info_top.dart';
 import 'sticker_view_page_widgets/sticker_packs.dart';
@@ -40,9 +39,9 @@ class _StickerViewPageState extends State<StickerViewPage> {
     final ByteData bytes = await rootBundle.load(
         "sticker_packs/${widget.stickerPack.identifier}/${widget.stickerPack.trayImageFile}");
     var pngBytes = bytes.buffer.asUint8List();
-    await Share.file(
-        'Refer Merchant', 'referMerchant.png', pngBytes, 'image/png',
-        text: 'Download this sticker ');
+    await Share.file('Share Sticker', 'sticker.png', pngBytes, 'image/png',
+        text:
+            'To Add this sticker in your WhatsApp Download this app https://play.google.com/store/apps/details?id=com.geniushub.WAStickers ');
   }
 
   @override

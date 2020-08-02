@@ -32,6 +32,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/
     - sticker_packs/1/
     - sticker_packs/2/
     - sticker_packs/3/

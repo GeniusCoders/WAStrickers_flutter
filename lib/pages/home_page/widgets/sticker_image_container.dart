@@ -1,5 +1,6 @@
 import 'package:WAStickers/style/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class StickerImageContainer extends StatefulWidget {
   final Color color;
@@ -21,27 +22,27 @@ class _StickerImageContainerState extends State<StickerImageContainer> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 140,
+      width: 140.h,
       margin: EdgeInsets.symmetric(
-        horizontal: 10,
+        horizontal: 10.w,
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Container(
             width: double.infinity,
-            height: 140,
+            height: 140.h,
             decoration: BoxDecoration(
                 color: widget.color,
-                borderRadius: BorderRadius.vertical(top: Radius.circular(6))),
+                borderRadius: BorderRadius.vertical(top: Radius.circular(6.w))),
             child: Image.asset(widget.str),
           ),
           Container(
             width: double.infinity,
-            padding: EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+            padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 10.h),
             decoration: BoxDecoration(
               color: white,
-              borderRadius: BorderRadius.vertical(bottom: Radius.circular(6)),
+              borderRadius: BorderRadius.vertical(bottom: Radius.circular(6.w)),
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -53,16 +54,18 @@ class _StickerImageContainerState extends State<StickerImageContainer> {
                     style: TextStyle(
                         color: black,
                         fontWeight: FontWeight.w600,
-                        fontSize: 16),
+                        fontSize: 16.sp),
                   ),
                 ),
                 SizedBox(
-                  height: 4,
+                  height: 4.h,
                 ),
                 Text(
                   '${widget.stickerCount} Stickers',
                   style: TextStyle(
-                      fontSize: 12, fontWeight: FontWeight.w800, color: black),
+                      fontSize: 12.sp,
+                      fontWeight: FontWeight.w800,
+                      color: black),
                 )
               ],
             ),

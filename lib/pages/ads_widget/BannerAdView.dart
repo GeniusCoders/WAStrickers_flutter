@@ -13,7 +13,7 @@ class BannerAdView {
 
   static BannerAd createBannerAd() {
     return BannerAd(
-        adUnitId: BannerAd.testAdUnitId,
+        adUnitId: "ca-app-pub-3940256099942544/6300978111",
         //Change BannerAd adUnitId with Admob ID
         size: AdSize.banner,
         targetingInfo: targetingInfo,

@@ -2,6 +2,7 @@ import 'package:WAStickers/models/sticker_packs_model.dart';
 import 'package:flutter/material.dart';
 import 'sticker_image_container.dart';
 import 'package:WAStickers/pages/sticker_view_page/sticker_view_page.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomePackList extends StatelessWidget {
   final List data;
@@ -11,9 +12,9 @@ class HomePackList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
+      height: 200.h,
       child: Padding(
-        padding: const EdgeInsets.only(left: 10),
+        padding: EdgeInsets.only(left: 10.w),
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: data.length,

@@ -1,6 +1,7 @@
 import 'package:WAStickers/models/sticker_packs_model.dart';
 import 'package:WAStickers/pages/sticker_list_page.dart/sticker_list_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ContainerTitle extends StatelessWidget {
   final String str;
@@ -10,13 +11,13 @@ class ContainerTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Text(
             str,
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+            style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600),
           ),
           InkWell(
             onTap: () {
@@ -29,7 +30,7 @@ class ContainerTitle extends StatelessWidget {
             child: Text(
               "View All",
               style: TextStyle(
-                  fontSize: 14,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w600,
                   color: Colors.purple),
             ),

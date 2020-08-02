@@ -7,6 +7,7 @@ import 'package:flutter_whatsapp_stickers/flutter_whatsapp_stickers.dart';
 import 'button.dart';
 import 'sticker_info.dart';
 import 'sticker_try_img.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class StickerInfoTop extends StatefulWidget {
   final StickerPacksList stickerPack;
@@ -57,14 +58,15 @@ class _StickerInfoTopState extends State<StickerInfoTop> {
         return AlertDialog(
           title: Text(
             'Sticker Pack',
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+            style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w600),
           ),
           content: SingleChildScrollView(
             child: ListBody(
               children: <Widget>[
                 Text(
                   str,
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                  style:
+                      TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w600),
                 ),
               ],
             ),
@@ -73,7 +75,7 @@ class _StickerInfoTopState extends State<StickerInfoTop> {
             FlatButton(
               child: Text(
                 'Ok',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w600),
               ),
               onPressed: () {
                 Navigator.of(context).pop();
@@ -96,24 +98,24 @@ class _StickerInfoTopState extends State<StickerInfoTop> {
         }
       },
       child: Container(
-        height: 180,
+        height: 180.h,
         child: Stack(
           children: <Widget>[
             Container(
-              height: 120,
+              height: 120.h,
               decoration: BoxDecoration(
                   color: widget.color,
                   borderRadius:
-                      BorderRadius.vertical(bottom: Radius.circular(12))),
+                      BorderRadius.vertical(bottom: Radius.circular(12.w))),
               child: Container(),
             ),
             Positioned(
-              top: 10,
+              top: 10.h,
               left: 0,
               right: 0,
               child: Container(
-                height: 140,
-                margin: EdgeInsets.symmetric(horizontal: 20),
+                height: 140.h,
+                margin: EdgeInsets.symmetric(horizontal: 20.w),
                 width: double.infinity,
                 decoration: BoxDecoration(
                     boxShadow: [
@@ -125,7 +127,7 @@ class _StickerInfoTopState extends State<StickerInfoTop> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(14)),
+                    borderRadius: BorderRadius.circular(14.w)),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
@@ -135,8 +137,8 @@ class _StickerInfoTopState extends State<StickerInfoTop> {
                     ),
                     Expanded(
                       child: Container(
-                        padding: EdgeInsets.all(16),
-                        height: 140,
+                        padding: EdgeInsets.all(16.w),
+                        height: 140.h,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
