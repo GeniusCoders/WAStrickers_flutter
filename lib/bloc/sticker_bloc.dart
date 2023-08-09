@@ -45,7 +45,7 @@ class StickerBloc extends Bloc<StickerEvent, StickerState> {
           packageName: WhatsAppPackage.Consumer,
           stickerPackIdentifier: event.id,
           stickerPackName: event.name,
-          listener: (action, result, {error}) => processResponse(
+          listener: (action, result, {error = "Error"}) => processResponse(
             action: action,
             result: result,
             error: error,

@@ -1,5 +1,4 @@
 import 'package:WAStickers/bloc/sticker_bloc.dart';
-import 'package:WAStickers/style/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -12,11 +11,15 @@ class HomePage extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
 
     if (width < 600) {
-      ScreenUtil.init(context,
-          width: 360.0, height: 780.0, allowFontScaling: true);
+      ScreenUtil.init(
+        context,
+        designSize: Size(360.0, 780),
+      );
     } else {
-      ScreenUtil.init(context,
-          width: 900.0, height: 1224.0, allowFontScaling: true);
+      ScreenUtil.init(
+        context,
+        designSize: Size(900.0, 1224.0),
+      );
     }
     return SafeArea(
       child: Scaffold(

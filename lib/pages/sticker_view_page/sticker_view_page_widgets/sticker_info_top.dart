@@ -12,7 +12,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class StickerInfoTop extends StatefulWidget {
   final StickerPacksList stickerPack;
   final Color color;
-  const StickerInfoTop({this.stickerPack, this.color});
+  const StickerInfoTop({required this.stickerPack, required this.color});
 
   @override
   _StickerInfoTopState createState() => _StickerInfoTopState(stickerPack);
@@ -32,7 +32,7 @@ class _StickerInfoTopState extends State<StickerInfoTop> {
 
   void _checkInstallationStatuses() async {
     bool _install = await WhatsAppStickers()
-        .isStickerPackInstalled(widget.stickerPack.identifier);
+        .isStickerPackInstalled(widget.stickerPack.identifier ?? "");
     setState(() {
       isInstalled = _install;
     });
@@ -41,10 +41,10 @@ class _StickerInfoTopState extends State<StickerInfoTop> {
   _onAddSticker() async {
     bool isInstalled = await DeviceApps.isAppInstalled('com.whatsapp');
     if (isInstalled) {
-      context.bloc<StickerBloc>().add(AddSticker(
+      BlocProvider.of<StickerBloc>(context).add(AddSticker(
           context: context,
-          id: stickerPack.identifier,
-          name: stickerPack.name));
+          id: stickerPack.identifier ?? '',
+          name: stickerPack.name ?? ''));
     } else {
       _showMyDialog('Please Install WhatsApp to add sticker pack');
     }
@@ -72,7 +72,7 @@ class _StickerInfoTopState extends State<StickerInfoTop> {
             ),
           ),
           actions: <Widget>[
-            FlatButton(
+            TextButton(
               child: Text(
                 'Ok',
                 style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w600),

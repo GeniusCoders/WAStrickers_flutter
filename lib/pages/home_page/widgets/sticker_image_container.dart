@@ -8,10 +8,10 @@ class StickerImageContainer extends StatefulWidget {
   final String name;
   final String stickerCount;
   const StickerImageContainer({
-    @required this.color,
-    @required this.str,
-    @required this.name,
-    @required this.stickerCount,
+    required this.color,
+    required this.str,
+    required this.name,
+    required this.stickerCount,
   });
 
   @override

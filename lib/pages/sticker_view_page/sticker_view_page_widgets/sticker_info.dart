@@ -5,7 +5,7 @@ class StickerInfo extends StatelessWidget {
   final String stickerName;
   final String stickerOwner;
 
-  const StickerInfo({@required this.stickerName, this.stickerOwner});
+  const StickerInfo({required this.stickerName, required this.stickerOwner});
 
   @override
   Widget build(BuildContext context) {

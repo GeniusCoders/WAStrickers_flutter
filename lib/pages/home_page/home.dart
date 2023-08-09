@@ -2,11 +2,8 @@ import 'package:WAStickers/bloc/sticker_bloc.dart';
 import 'package:WAStickers/data/all_pack.dart';
 import 'package:WAStickers/data/featured.dart';
 import 'package:WAStickers/models/sticker_packs_model.dart';
-import 'package:WAStickers/pages/ads_widget/BannerAdView.dart';
-import 'package:WAStickers/pages/ads_widget/fake_bottom.dart';
 import 'package:WAStickers/pages/home_page/widgets/featured_banners.dart';
 import 'package:WAStickers/pages/home_page/widgets/home_pack_list.dart';
-import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'widgets/container_title.dart';
@@ -18,25 +15,22 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  StickerPackModel featuredStickerList;
-  StickerPackModel allStickerList;
-  BannerAd _bannerAd;
+  StickerPackModel? featuredStickerList;
+  StickerPackModel? allStickerList;
 
   @override
   void initState() {
-    FirebaseAdMob.instance.initialize(appId: BannerAdView.adUnitId);
-    _bannerAd = BannerAdView.createBannerAd()
-      ..load()
-      ..show();
-
     super.initState();
+    // BlocProvider.of<StickerBloc>(context)
+    //     .on((event, emit) => GetAllPackSticker);
+    // BlocProvider.of<StickerBloc>(context)
+    //     .on((event, emit) => GetFeaturedSticker);
     BlocProvider.of<StickerBloc>(context).add(GetFeaturedSticker());
     BlocProvider.of<StickerBloc>(context).add(GetAllPackSticker());
   }
 
   @override
   void dispose() {
-    _bannerAd.dispose();
     super.dispose();
   }
 
@@ -86,30 +80,29 @@ class _HomeState extends State<Home> {
                   ),
                   ContainerTitle(
                     str: 'Featured',
-                    stickerPackModel: featuredStickerList,
+                    stickerPackModel: featuredStickerList!,
                   ),
                   SizedBox(
                     height: 6.h,
                   ),
                   HomePackList(
                     data: featuredData,
-                    stickerPackModel: featuredStickerList,
+                    stickerPackModel: featuredStickerList!,
                   ),
                   SizedBox(
                     height: 12.h,
                   ),
                   ContainerTitle(
                     str: 'All Packs',
-                    stickerPackModel: allStickerList,
+                    stickerPackModel: allStickerList!,
                   ),
                   SizedBox(
                     height: 6.h,
                   ),
                   HomePackList(
                     data: allPackData,
-                    stickerPackModel: allStickerList,
+                    stickerPackModel: allStickerList!,
                   ),
-                  FakeBottom()
                 ],
               ),
             ),

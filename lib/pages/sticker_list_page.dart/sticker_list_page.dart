@@ -1,5 +1,4 @@
 import 'package:WAStickers/models/sticker_packs_model.dart';
-import 'package:WAStickers/pages/ads_widget/fake_bottom.dart';
 import 'package:WAStickers/pages/sticker_view_page/sticker_view_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -7,8 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class StickerListPage extends StatelessWidget {
   final StickerPackModel stickerPackModel;
   final String title;
-  const StickerListPage(
-      {@required this.stickerPackModel, @required this.title});
+  const StickerListPage({required this.stickerPackModel, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -22,12 +20,12 @@ class StickerListPage extends StatelessWidget {
           children: <Widget>[
             Expanded(
               child: ListView.builder(
-                itemCount: stickerPackModel.stickerPacks.length,
+                itemCount: stickerPackModel.stickerPacks!.length,
                 itemBuilder: (context, index) {
-                  final _data = stickerPackModel.stickerPacks[index];
+                  final _data = stickerPackModel.stickerPacks![index];
                   return ListTile(
                     onTap: () {
-                      final _data = stickerPackModel.stickerPacks[index];
+                      final _data = stickerPackModel.stickerPacks![index];
                       Navigator.of(context).push(MaterialPageRoute(
                         builder: (BuildContext context) => StickerViewPage(
                           stickerPack: _data,
@@ -42,7 +40,6 @@ class StickerListPage extends StatelessWidget {
                 },
               ),
             ),
-            FakeBottom()
           ],
         ),
       ),

@@ -7,7 +7,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class HomePackList extends StatelessWidget {
   final List data;
   final StickerPackModel stickerPackModel;
-  const HomePackList({@required this.data, @required this.stickerPackModel});
+  const HomePackList({required this.data, required this.stickerPackModel});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class HomePackList extends StatelessWidget {
             return InkWell(
               onTap: () {
                 final _data = stickerPackModel
-                    .stickerPacks[int.parse(data[index]['Index']) - 1];
+                    .stickerPacks![int.parse(data[index]['Index']) - 1];
                 Navigator.of(context).push(MaterialPageRoute(
                   builder: (BuildContext context) => StickerViewPage(
                     stickerPack: _data,
@@ -32,7 +32,7 @@ class HomePackList extends StatelessWidget {
               child: StickerImageContainer(
                 color: Color(data[index]['Color']),
                 str:
-                    'sticker_packs/${stickerPackModel.stickerPacks[int.parse(data[index]['Index']) - 1].identifier}/tray_img.png',
+                    'sticker_packs/${stickerPackModel.stickerPacks![int.parse(data[index]['Index']) - 1].identifier}/tray_img.png',
                 name: data[index]['Name'],
                 stickerCount: data[index]['Sticker_Count'],
               ),

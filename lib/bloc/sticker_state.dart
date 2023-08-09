@@ -24,5 +24,5 @@ class StickerAdded extends StickerState {}
 class StickerAddedFailed extends StickerState {
   final String error;
 
-  StickerAddedFailed({@required this.error});
+  StickerAddedFailed({required this.error});
 }

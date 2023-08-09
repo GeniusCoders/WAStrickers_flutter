@@ -1,7 +1,6 @@
 import 'package:WAStickers/bloc/sticker_bloc.dart';
 import 'package:WAStickers/models/sticker_packs_model.dart';
 import 'package:WAStickers/style/colors.dart';
-import 'package:esys_flutter_share/esys_flutter_share.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -12,7 +11,7 @@ import 'sticker_view_page_widgets/sticker_packs.dart';
 class StickerViewPage extends StatefulWidget {
   final StickerPacksList stickerPack;
 
-  const StickerViewPage({@required this.stickerPack});
+  const StickerViewPage({required this.stickerPack});
 
   @override
   _StickerViewPageState createState() => _StickerViewPageState();
@@ -39,9 +38,10 @@ class _StickerViewPageState extends State<StickerViewPage> {
     final ByteData bytes = await rootBundle.load(
         "sticker_packs/${widget.stickerPack.identifier}/${widget.stickerPack.trayImageFile}");
     var pngBytes = bytes.buffer.asUint8List();
-    await Share.file('Share Sticker', 'sticker.png', pngBytes, 'image/png',
-        text:
-            'To Add this sticker in your WhatsApp Download this app https://play.google.com/store/apps/details?id=com.geniushub.WAStickers ');
+
+    // await Share.file('Share Sticker', 'sticker.png', pngBytes, 'image/png',
+    //     text:
+    //         'To Add this sticker in your WhatsApp Download this app https://play.google.com/store/apps/details?id=com.geniushub.WAStickers ');
   }
 
   @override
@@ -112,7 +112,7 @@ Future<Color> _getColorCode(ImageProvider image) async {
     maximumColorCount: 4,
   );
 
-  return paletteGenerator.dominantColor.color ?? Colors.black;
+  return paletteGenerator.dominantColor!.color;
 }
 
 class Loading extends StatelessWidget {

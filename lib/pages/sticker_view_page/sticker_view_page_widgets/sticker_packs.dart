@@ -1,12 +1,11 @@
 import 'package:WAStickers/models/sticker_packs_model.dart';
-import 'package:WAStickers/pages/ads_widget/fake_bottom.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class StickerPacks extends StatefulWidget {
   final StickerPacksList stickerPack;
   final Color color;
-  const StickerPacks({this.stickerPack, this.color});
+  const StickerPacks({required this.stickerPack, required this.color});
 
   @override
   _StickerPacksState createState() => _StickerPacksState(stickerPack);
@@ -40,10 +39,10 @@ class _StickerPacksState extends State<StickerPacks> {
                   crossAxisCount: 3,
                   childAspectRatio: 1,
                 ),
-                itemCount: stickerPack.stickers.length,
+                itemCount: stickerPack.stickers!.length,
                 itemBuilder: (context, index) {
                   var stickerImg =
-                      "sticker_packs/${stickerPack.identifier}/${stickerPack.stickers[index].imageFile}";
+                      "sticker_packs/${stickerPack.identifier}/${stickerPack.stickers![index].imageFile}";
                   return Container(
                     decoration: BoxDecoration(
                         color: widget.color.withOpacity(.4),
@@ -60,7 +59,6 @@ class _StickerPacksState extends State<StickerPacks> {
                   );
                 }),
           ),
-          FakeBottom()
         ],
       ),
     );

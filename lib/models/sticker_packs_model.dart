@@ -1,28 +1,28 @@
 class StickerPackModel {
-  List<StickerPacksList> stickerPacks;
+  List<StickerPacksList>? stickerPacks;
 
   StickerPackModel({this.stickerPacks});
 
   StickerPackModel.fromJson(Map<String, dynamic> json) {
     if (json['sticker_packs'] != null) {
-      stickerPacks = List<StickerPacksList>();
+      stickerPacks = [];
       json['sticker_packs'].forEach((v) {
-        stickerPacks.add(StickerPacksList.fromJson(v));
+        stickerPacks!.add(StickerPacksList.fromJson(v));
       });
     }
   }
 }
 
 class StickerPacksList {
-  String identifier;
-  String name;
-  String publisher;
-  String trayImageFile;
-  String publisherEmail;
-  String publisherWebsite;
-  String privacyPolicyWebsite;
-  String licenseAgreementWebsite;
-  List<Stickers> stickers;
+  String? identifier;
+  String? name;
+  String? publisher;
+  String? trayImageFile;
+  String? publisherEmail;
+  String? publisherWebsite;
+  String? privacyPolicyWebsite;
+  String? licenseAgreementWebsite;
+  List<Stickers>? stickers;
 
   StickerPacksList(
       {this.identifier,
@@ -45,17 +45,17 @@ class StickerPacksList {
     privacyPolicyWebsite = json['privacy_policy_website'];
     licenseAgreementWebsite = json['license_agreement_website'];
     if (json['stickers'] != null) {
-      stickers = new List<Stickers>();
+      stickers = [];
       json['stickers'].forEach((v) {
-        stickers.add(new Stickers.fromJson(v));
+        stickers!.add(new Stickers.fromJson(v));
       });
     }
   }
 }
 
 class Stickers {
-  String imageFile;
-  List<String> emojis;
+  String? imageFile;
+  List<String>? emojis;
 
   Stickers({this.imageFile, this.emojis});
 

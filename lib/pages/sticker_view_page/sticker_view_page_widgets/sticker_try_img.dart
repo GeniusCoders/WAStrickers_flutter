@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class StickerTryImage extends StatelessWidget {
   final String imgUrl;
 
-  const StickerTryImage({@required this.imgUrl});
+  const StickerTryImage({required this.imgUrl});
 
   @override
   Widget build(BuildContext context) {

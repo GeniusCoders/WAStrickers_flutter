@@ -11,5 +11,5 @@ class AddSticker extends StickerEvent {
   final String id;
   final String name;
   final BuildContext context;
-  AddSticker({@required this.id, @required this.name, @required this.context});
+  AddSticker({required this.id, required this.name, required this.context});
 }

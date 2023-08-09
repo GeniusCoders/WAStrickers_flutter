@@ -6,7 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class ContainerTitle extends StatelessWidget {
   final String str;
   final StickerPackModel stickerPackModel;
-  const ContainerTitle({@required this.str, @required this.stickerPackModel});
+  const ContainerTitle({required this.str, required this.stickerPackModel});
 
   @override
   Widget build(BuildContext context) {
