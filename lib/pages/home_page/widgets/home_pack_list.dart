@@ -12,7 +12,7 @@ class HomePackList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200.h,
+      height: 220.h,
       child: Padding(
         padding: EdgeInsets.only(left: 10.w),
         child: ListView.builder(

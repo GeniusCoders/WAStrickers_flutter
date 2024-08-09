@@ -114,7 +114,6 @@ class _StickerInfoTopState extends State<StickerInfoTop> {
               left: 0,
               right: 0,
               child: Container(
-                height: 140.h,
                 margin: EdgeInsets.symmetric(horizontal: 20.w),
                 width: double.infinity,
                 decoration: BoxDecoration(
@@ -138,7 +137,7 @@ class _StickerInfoTopState extends State<StickerInfoTop> {
                     Expanded(
                       child: Container(
                         padding: EdgeInsets.all(16.w),
-                        height: 140.h,
+                        height: 156.h,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
